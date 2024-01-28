@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:jammy
+FROM arm64v8/python:slim
 LABEL org.opencontainers.image.source https://github.com/khoj-ai/khoj
 
 # Install System Dependencies
