@@ -46,8 +46,6 @@ services:
       - KHOJ_ADMIN_EMAIL=trebatak@hotmail.com
       - KHOJ_ADMIN_PASSWORD=805245io
       - KHOJ_DOMAIN=khoj.rmrf.pp.ua
-      - SESSION_COOKIE_DOMAIN=khoj.rmrf.pp.ua
-      - CSRF_COOKIE_DOMAIN=khoj.rmrf.pp.ua
     command: --host="0.0.0.0" --port=42110 -vv --anonymous-mode
 
 volumes:
