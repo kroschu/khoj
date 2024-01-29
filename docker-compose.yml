@@ -20,7 +20,7 @@ services:
       database:
         condition: service_healthy
     # Use the following line to use the latest version of khoj. Otherwise, it will build from source.
-    image: kroschu/khoj-arm64:latest
+    image: ghcr.io/khoj-ai/khoj:latest
     # Uncomment the following line to build from source. This will take a few minutes. Comment the next two lines out if you want to use the offiicial image.
     # build:
       # context: .
@@ -43,8 +43,8 @@ services:
       - POSTGRES_PORT=5432
       - KHOJ_DJANGO_SECRET_KEY=secret
       - KHOJ_DEBUG=True
-      - KHOJ_ADMIN_EMAIL=username@example.com
-      - KHOJ_ADMIN_PASSWORD=password
+      - KHOJ_ADMIN_EMAIL=trebatak@hotmail.com
+      - KHOJ_ADMIN_PASSWORD=805245io
     command: --host="0.0.0.0" --port=42110 -vv --anonymous-mode
 
 
