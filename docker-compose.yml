@@ -20,7 +20,7 @@ services:
       database:
         condition: service_healthy
     # Use the following line to use the latest version of khoj. Otherwise, it will build from source.
-    image: kroschu/khoj-arm64:latest
+    image: ghcr.io/khoj-ai/khoj:pre
     # Uncomment the following line to build from source. This will take a few minutes. Comment the next two lines out if you want to use the offiicial image.
     # build:
       # context: .
@@ -48,7 +48,7 @@ services:
       - KHOJ_DOMAIN=khoj.rmrf.pp.ua
       - GOOGLE_CLIENT_ID=337011075778-56u5mi8bda67eqoiedglm1ihiidlug1c.apps.googleusercontent.com
       - GOOGLE_CLIENT_SECRET=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
-    command: --host="0.0.0.0" --port=42110 -vvv --anonymous-mode
+    command: --host="0.0.0.0" --port=42110 -vv --anonymous-mode
 
 volumes:
   khoj_config:
