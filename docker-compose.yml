@@ -43,10 +43,9 @@ services:
       - POSTGRES_PORT=5432
       - KHOJ_DJANGO_SECRET_KEY=secret
       - KHOJ_DEBUG=True
-      - KHOJ_ADMIN_EMAIL=trebatak@hotmail.com
-      - KHOJ_ADMIN_PASSWORD=805245io
-    command: --host="0.0.0.0" --port=42110 -vv
-
+      - KHOJ_ADMIN_EMAIL=idea.kroschu@gmal.com
+      - KHOJ_ADMIN_PASSWORD=805245io..
+    command: --host="0.0.0.0" --port=42110
 
 volumes:
   khoj_config:
