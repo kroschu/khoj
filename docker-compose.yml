@@ -48,7 +48,6 @@ services:
       - KHOJ_DOMAIN=khoj.rmrf.pp.ua
       - GOOGLE_CLIENT_ID=337011075778-56u5mi8bda67eqoiedglm1ihiidlug1c.apps.googleusercontent.com
       - GOOGLE_CLIENT_SECRET=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
-      - KHOJ_DEBUG=True
     command: --host="0.0.0.0" --port=42110 -vvv --anonymous-mode
 
 volumes:
