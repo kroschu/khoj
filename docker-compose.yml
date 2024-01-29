@@ -32,8 +32,8 @@ services:
       - "42110:42110"
     working_dir: /app
     volumes:
-      - khoj_config:/root/.khoj/
-      - khoj_models:/root/.cache/torch/sentence_transformers
+      - /home/droidian/kh/khoj_config:/root/.khoj/
+      - /home/droidian/kh/khoj_models:/root/.cache/torch/sentence_transformers
     # Use 0.0.0.0 to explicitly set the host ip for the service on the container. https://pythonspeed.com/articles/docker-connection-refused/
     environment:
       - POSTGRES_DB=postgres
@@ -48,7 +48,7 @@ services:
       - KHOJ_DOMAIN=khoj.rmrf.pp.ua
       - GOOGLE_CLIENT_ID=337011075778-56u5mi8bda67eqoiedglm1ihiidlug1c.apps.googleusercontent.com
       - GOOGLE_CLIENT_SECRET=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
-    command: --host="0.0.0.0" --port=42110 
+    command: --host="0.0.0.0" --port=42110 -vvv --anonymous-mode
 
 volumes:
   khoj_config:
