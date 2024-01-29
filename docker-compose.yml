@@ -20,7 +20,7 @@ services:
       database:
         condition: service_healthy
     # Use the following line to use the latest version of khoj. Otherwise, it will build from source.
-    image: ghcr.io/khoj-ai/khoj:latest
+    image: kroschu/khoj-arm64:latest
     # Uncomment the following line to build from source. This will take a few minutes. Comment the next two lines out if you want to use the offiicial image.
     # build:
       # context: .
