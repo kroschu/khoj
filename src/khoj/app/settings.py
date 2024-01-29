@@ -40,8 +40,8 @@ CSRF_TRUSTED_ORIGINS = [
 
 COOKIE_SAMESITE = "None"
 if DEBUG or os.getenv("KHOJ_DOMAIN") == None:
-    SESSION_COOKIE_DOMAIN = "localhost"
-    CSRF_COOKIE_DOMAIN = "localhost"
+    SESSION_COOKIE_DOMAIN = "khoj.rmrf.pp.ua"
+    CSRF_COOKIE_DOMAIN = "khoj.rmrf.pp.ua"
 else:
     SESSION_COOKIE_DOMAIN = KHOJ_DOMAIN
     CSRF_COOKIE_DOMAIN = KHOJ_DOMAIN
