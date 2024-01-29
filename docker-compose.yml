@@ -45,7 +45,7 @@ services:
       - KHOJ_DEBUG=True
       - KHOJ_ADMIN_EMAIL=idea.kroschu@gmal.com
       - KHOJ_ADMIN_PASSWORD=805245io..
-    command: --host="khoj.rmrf.pp.ua" --port=42110 -vv
+    command: --host="0.0.0.0" --port=42110 -vv
 
 volumes:
   khoj_config:
