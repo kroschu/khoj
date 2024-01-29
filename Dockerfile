@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM arm64v8/python:3.8.18-slim-bullseye
+FROM arm64v8/python
 LABEL org.opencontainers.image.source https://github.com/khoj-ai/khoj
 
 # Install System Dependencies
