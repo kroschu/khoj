@@ -25,4 +25,4 @@ ENV PYTHONPATH=/app/src:$PYTHONPATH
 # but these should be passed in through the docker-compose.yml file.
 ARG PORT
 EXPOSE ${PORT}
-ENTRYPOINT ["python3", "src/khoj/main.py"]
+ENTRYPOINT ["python3", "src/khoj/utils/initialization.py", "src/khoj/main.py"]
